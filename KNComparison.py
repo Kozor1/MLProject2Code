@@ -5,12 +5,12 @@ import mlrose_hiive as mlr
 import time
 random_seed = 17
 
-size = 101
+size = 51
 
 x_ax = []
 rhc_times, rhc_fitness, sa_times, sa_fitness, ga_times, ga_fitness, mi_times, mi_fitness = [], [], [], [], [], [], [], []
 
-for n in range(10, size, 10):
+for n in range(5, size, 5):
 
     x_ax.append(n)
 
