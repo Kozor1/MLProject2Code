@@ -3,14 +3,14 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import mlrose_hiive as mlr
 
-### TSP ###
+### KN ###
 
 # # SA
-# sa_tsp = pd.read_csv('Results/SA_TSP/sa__SA_TSP__curves_df.csv', index_col=0)
-# sa_tsp_run = pd.read_csv('Results/SA_TSP/sa__SA_TSP__run_stats_df.csv', index_col=0)
+# sa_KN = pd.read_csv('Results/SA_KN/sa__SA_KN__curves_df.csv', index_col=0)
+# sa_KN_run = pd.read_csv('Results/SA_KN/sa__SA_KN__run_stats_df.csv', index_col=0)
 #
-# best_fitness = sa_tsp['Fitness'].min()
-# best_runs = sa_tsp[sa_tsp['Fitness'] == best_fitness]
+# best_fitness = sa_KN['Fitness'].max()
+# best_runs = sa_KN[sa_KN['Fitness'] == best_fitness]
 #
 # minimum_evaluations = best_runs['FEvals'].min()
 # best_curve_run = best_runs[best_runs['FEvals'] == minimum_evaluations]
@@ -18,33 +18,33 @@ import mlrose_hiive as mlr
 
 
 # # RHC
-# sa_tsp = pd.read_csv('Results/RHC_TSP/rhc__RHC_TSP__curves_df.csv', index_col=0)
-# sa_tsp_run = pd.read_csv('Results/RHC_TSP/rhc__RHC_TSP__run_stats_df.csv', index_col=0)
+# sa_KN = pd.read_csv('Results/RHC_KN/rhc__RHC_KN__curves_df.csv', index_col=0)
+# sa_KN_run = pd.read_csv('Results/RHC_KN/rhc__RHC_KN__run_stats_df.csv', index_col=0)
 #
-# best_fitness = sa_tsp['Fitness'].min()
-# best_runs = sa_tsp[sa_tsp['Fitness'] == best_fitness]
+# best_fitness = sa_KN['Fitness'].max()
+# best_runs = sa_KN[sa_KN['Fitness'] == best_fitness]
 #
 # minimum_evaluations = best_runs['FEvals'].min()
 # best_curve_run = best_runs[best_runs['FEvals'] == minimum_evaluations]
 # print(best_curve_run.T)
 
 # # GA
-# sa_tsp = pd.read_csv('Results/GA_TSP/ga__GA_TSP__curves_df.csv', index_col=0)
-# sa_tsp_run = pd.read_csv('Results/GA_TSP/ga__GA_TSP__run_stats_df.csv', index_col=0)
+# sa_KN = pd.read_csv('Results/GA_KN/ga__GA_KN__curves_df.csv', index_col=0)
+# sa_KN_run = pd.read_csv('Results/GA_KN/ga__GA_KN__run_stats_df.csv', index_col=0)
 #
-# best_fitness = sa_tsp['Fitness'].min()
-# best_runs = sa_tsp[sa_tsp['Fitness'] == best_fitness]
+# best_fitness = sa_KN['Fitness'].max()
+# best_runs = sa_KN[sa_KN['Fitness'] == best_fitness]
 #
 # minimum_evaluations = best_runs['FEvals'].min()
 # best_curve_run = best_runs[best_runs['FEvals'] == minimum_evaluations]
 # print(best_curve_run.T)
 
 # MI
-sa_tsp = pd.read_csv('Results/MI_TSP/mimic__MI_TSP__curves_df.csv', index_col=0)
-sa_tsp_run = pd.read_csv('Results/MI_TSP/mimic__MI_TSP__run_stats_df.csv', index_col=0)
+sa_KN = pd.read_csv('Results/MI_KN/mimic__MI_KN__curves_df.csv', index_col=0)
+sa_KN_run = pd.read_csv('Results/MI_KN/mimic__MI_KN__run_stats_df.csv', index_col=0)
 
-best_fitness = sa_tsp['Fitness'].min()
-best_runs = sa_tsp[sa_tsp['Fitness'] == best_fitness]
+best_fitness = sa_KN['Fitness'].max()
+best_runs = sa_KN[sa_KN['Fitness'] == best_fitness]
 
 minimum_evaluations = best_runs['FEvals'].min()
 best_curve_run = best_runs[best_runs['FEvals'] == minimum_evaluations]
